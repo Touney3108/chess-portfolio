@@ -1,0 +1,28 @@
+.row:nth-child(odd) .checker:nth-child(odd){
+    background-color: $color-checker-white;
+}
+.row:nth-child(even) .checker:nth-child(even){
+    background-color: $color-checker-white;
+}
+.row:nth-child(odd) .checker:nth-child(even){
+    background-color: $color-checker-black;
+}
+.row:nth-child(even) .checker:nth-child(odd){
+    background-color: $color-checker-black;
+}
+
+.board .row .checker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    transition: all .2s;
+
+
+    &:active,
+    &:focus{
+    background-color: $color-checker-checked;
+    
+    }
+}

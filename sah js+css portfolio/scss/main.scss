@@ -1,0 +1,29 @@
+$color-checker-black:rgb(143, 131, 137);
+$color-checker-white:rgb(230, 239, 233);
+$color-checker-checked:rgb(190, 183, 186);
+$color-black-transparent:rgba(32,32,32,.8);
+$color-black:black;
+$color-yellow:hsl(40, 94%, 49%);
+$color-white:#fff;
+$color-grey-light:#BBB;
+
+
+@mixin mediaquery{
+    @media only screen and (max-width:"1023px") and (min-height:"1024px"),
+        only screen and (max-width:"799px") and (min-height:"800px"),
+        only screen and (max-width:"599px") and (min-height:"600px"),
+        only screen and (max-width:"399px") and ( min-height:"400px"){
+        @content;
+        }
+};
+@mixin smallScreen{
+    @media only screen and (max-width:"530px"){
+        @content;
+    }
+}
+
+@import "base";
+@import "grid";
+@import "boardstyle";
+@import "character";
+@import "components";

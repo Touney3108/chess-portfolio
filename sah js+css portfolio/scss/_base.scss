@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before{
+    font-size:.625em;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+span{
+    font-size: inherit;
+}
+
+.win{
+    position: fixed;
+    height: 80vh;
+    width: 80vh;
+    background-color: $color-black-transparent;
+    box-shadow: 3vh 3vh 7vh $color-black;
+    display: none;
+    transform: scale(0);
+
+    @include mediaquery{
+        height: 90vw;
+        width: 90vw;
+        box-shadow: 3vw 3vw 7vw $color-black;
+    }
+    
+    &-container{
+        height: 80vh;
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+
+        @include mediaquery{
+        height: 90vw;
+        }
+        
+    }
+
+
+    &-congrats{
+        font-size: 7rem;
+        width: 80%;
+        text-align: center;
+        color:#E1D89F;
+        color:$color-yellow;
+
+        @include smallScreen{
+            font-size:4rem;
+        }
+        
+        
+    }
+}

@@ -1,0 +1,44 @@
+.figure{
+    height: 90%;
+    width: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &-king-black{
+        background-image:url(../svg/king-black.svg);
+    }
+    &-king-white{
+        background-image:url(../svg/king-white.svg);
+    }
+    &-queen-black{
+        background-image:url(../svg/queen-black.svg);
+    }
+    &-queen-white{
+        background-image:url(../svg/queen-white.svg);
+    }
+    &-rook-black{
+        background-image:url(../svg/rook-black.svg);
+    }
+    &-rook-white{
+        background-image:url(../svg/rook-white.svg);
+    }
+    &-hunter-black{
+        background-image:url(../svg/hunter-black.svg);
+    }
+    &-hunter-white{
+        background-image:url(../svg/hunter-white.svg);
+    }
+    &-horse-black{
+        background-image:url(../svg/horse-black.svg);
+    }
+    &-horse-white{
+        background-image:url(../svg/horse-white.svg);
+    }
+    &-pawn-black{
+        background-image:url(../svg/pawn-black.svg);
+    }
+    &-pawn-white{
+        background-image:url(../svg/pawn-white.svg);
+    }
+}

@@ -1,0 +1,84 @@
+.btn{
+    width: 50%;
+    font-size: 4rem;
+    font-weight: 600;
+    border:none;
+    padding: 2rem;
+    border-radius: 200px;
+    transition: all .2s;
+    line-height: 1;
+    position:relative;
+    cursor: pointer;
+    
+    @include smallScreen{
+        font-size: 2rem;
+    }
+
+    &::before{
+        background-color: inherit;
+        width: 100%;
+        content:"";
+        padding: 4rem;
+        border-radius: 200px;
+        z-index: -1;
+        position: absolute;
+        left:0;
+        top:50%;
+        transform: translateY(-50%);
+        transition:all .3s;
+
+        
+        
+    }
+
+    &:hover{
+        &::before{
+        background-color: transparent;
+        transform: translateY(-50%) scale(1.5);
+        }
+    }
+
+    &-yellow{
+        background-color: $color-yellow;
+        color: #005377;
+    }
+}
+
+.clock{
+    background-color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+    width: 25%;
+    position: absolute;
+    right:0;
+    text-align: center;
+    background-color: $color-grey-light;
+    border:1px solid black;
+    border:none;
+    border-radius: 100px;
+    @include smallScreen{
+        font-size: 1.5rem;
+    }
+    
+
+    p{
+        font-size: inherit;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    &-black{
+        transform: translateY(-3rem);
+        @include smallScreen{
+            transform: translateY(-2.5rem);
+        }
+    }
+    &-white{
+        top:95vh;
+        @include mediaquery{
+            top:100%;
+        }
+    }
+    
+
+}
